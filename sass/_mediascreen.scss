@@ -1,0 +1,79 @@
+// Media query
+@media(min-width: 800px) {
+    nav {
+        flex-wrap: nowrap;
+        .hamburger {
+            display: none;
+        }
+        ul.nav_list {
+            width: auto;
+            display: flex;
+            align-items: center;
+            background: transparent;
+            margin-top: 0;
+            padding: 0;
+            li {
+                padding-bottom: 0;
+                margin-left: 1.8rem;
+            }
+        }
+    }
+    .hero {
+     .hero_text_block {
+         h1 {
+             width: 60%;
+         }
+     }
+    }
+    
+ }
+ 
+ @media(min-width: 992px) {
+     .hero {
+         background: #fff;
+         min-height: auto;
+         .hero_text_block {
+             width: 45%;
+             margin-left: 5%;
+             
+             h1 {
+                 color: $black-light;
+                 font-weight: 400;
+                 width: 100%;
+             }
+             .search_block.search_block_hero {
+                 input {
+                     color: $base-color;
+                     &::placeholder {
+                         color: $base-color;
+                     }
+                 }
+             }
+         }
+             .hero_image_block {
+                 display: block;
+                 width: 55%;
+                 margin-left: 4rem;
+                 img {
+                     height: 100%;
+                 width: 100%;
+                 }
+             }
+        }
+        .apartments {
+            .apartments_list_wrapper {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+ } 
+ 
+ @media(min-width: 1192px) {
+     html {
+         font-size: 20px;
+     }
+     .apartments {
+         .apartments_list_wrapper {
+             grid-template-columns: repeat(4, 1fr);
+         }
+     }
+ }
