@@ -1,0 +1,46 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+    .logo_section {
+        display: flex;
+        align-items: center;
+
+        .search_block {
+            input {
+                border: none;
+                min-width: 190px;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+    ul {
+        display: none;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        background-color: whitesmoke;
+        margin-top: 1rem;
+        &.show {
+            display: block;
+        }
+        li {
+            padding-bottom: 1rem;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+            a {
+                color: $menu-color;
+                text-decoration: none;
+            }
+        }
+    }
+    .hamburger {
+        cursor: pointer;
+    }
+}
